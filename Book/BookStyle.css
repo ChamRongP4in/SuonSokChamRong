@@ -1,0 +1,86 @@
+/* ==== Google Font ==== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    scroll-padding-top: 3.2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+main {  
+    height: 100vh; 
+    display: grid;
+    place-items: center;
+    transition: 2s;
+}
+
+
+img {
+    width: 300px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    transform-origin: left;
+    border-radius: 0 1rem 1rem 0;
+    transition: 2s;
+}
+
+
+img:hover {
+    transform: rotateY(180deg);
+}
+
+
+main:has(img:hover) {
+    translate: 150px 0;
+}
+
+
+div {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    aspect-ratio: 3/4;
+    border-radius: 0 1rem 1rem 0;
+    background: #ddd;
+}
+
+
+h2, p {
+    margin: 1rem;
+}
+
+
+
+
+/* ==== Footer ==== */
+.hr1 {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    margin-top: 1000px;
+}
+.copyright {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+/* ==== iphone 14 ==== */
+@media (max-width: 440px) {
+    
+}
+
+
+
+/* ==== iphone X ==== */
+@media (max-width: 390px) {
+    
+}
