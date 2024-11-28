@@ -1,1 +1,1 @@
-Hello my name is SuonSokChamRong I'm newbie.
+I'm newbie 
