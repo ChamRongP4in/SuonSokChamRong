@@ -9,12 +9,24 @@ body {
     width: 100vw;
     overflow: hidden;
     background: #fff;
-    background-color: #3083F5;
+    background: url(/image/pic7.jpg);
+    background-size: 20%;
 }
 
 * {
     box-sizing: border-box;
 }
+
+.nav a{
+    margin-top: 0;
+    font-size: 50px;
+    color: #ff00dd;
+}
+
+.nav a:hover{
+    color: #3083F5;
+}
+
 
 .container {
     height: 31.25em;
