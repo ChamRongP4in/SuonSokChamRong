@@ -53,10 +53,10 @@ nav {
 }
 
 label.logo {
-    color: #C87941;
-    text-shadow: 2px 2px 0px #f39c12, 
-                         4px 4px 0px #d35400, 
-                         6px 6px 0px #e74c3c;
+    color: #ff3bf5;
+    text-shadow: 2px 2px 0px #ff6ff8, 
+                         4px 4px 0px #bb0db2, 
+                         6px 6px 0px #a7059e;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
@@ -87,7 +87,7 @@ nav ul li a {
     border-radius: 20px;
 }
 .a:hover {
-    background: #f39c12;
+    background: #ff3bf5;
     transition: .5s;
 }
 
@@ -109,10 +109,10 @@ nav ul li a {
     float: right;
     margin-left: 340px;
     margin-right: 0;
-    color: #C87941;
-    text-shadow: 2px 2px 0px #f39c12, 
-                         4px 4px 0px #d35400, 
-                         6px 6px 0px #e74c3c;
+    color: #ff3bf5;
+    text-shadow: 2px 2px 0px #ff6ff8, 
+                         4px 4px 0px #bb0db2, 
+                         6px 6px 0px #a7059e;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
@@ -146,10 +146,10 @@ nav ul li a {
 /* ==== wrab-page ==== */
 .wrab-page {
     text-align: center;
-    color: #C87941;
-    text-shadow: 2px 2px 0px #f39c12, 
-                         4px 4px 0px #d35400, 
-                         6px 6px 0px #e74c3c;
+    color: #ff3bf5;
+    text-shadow: 2px 2px 0px #ff6ff8, 
+                         4px 4px 0px #bb0db2, 
+                         6px 6px 0px #a7059e;
     font-size: 4rem;
     margin-top: 50px;
     margin-bottom: -100px;
@@ -160,10 +160,10 @@ nav ul li a {
     margin-top: 170px;
     text-align: center;
     font-size: 2.3rem;
-    color: #C87941;
-    text-shadow: 2px 2px 0px #f39c12, 
-                         4px 4px 0px #d35400, 
-                         6px 6px 0px #e74c3c;
+    color: #ff3bf5;
+    text-shadow: 2px 2px 0px #ff6ff8, 
+                         4px 4px 0px #bb0db2, 
+                         6px 6px 0px #a7059e;
     background-color: #ff3bf523;
     border-radius: 100px;
     margin-bottom: 30px;
@@ -298,7 +298,7 @@ ul li a {
 }
 
 div .social-icons i:hover {
-    background: #f39c12;
+    background: #a7059e;
     transition: .2s;
 }
 
