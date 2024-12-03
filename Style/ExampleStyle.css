@@ -18,10 +18,12 @@ html::-webkit-scrollbar {
     background: #ffffff;
 }
 
+
 html::-webkit-scrollbar-thumb {
     background: #ff3bf5;
     border-radius: 5rem;
 }
+
 
 .bx {
     font-size: 40px;
