@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    scroll-padding-top: 5.2rem;
+    scroll-padding-top: 6.9rem;
     scroll-behavior: smooth;
     text-decoration: none;
 }
@@ -39,88 +39,56 @@ body {
 
 
 
-/* ==== nav-bar ==== */
-nav {
+/* ==== Header ==== */
+.header {
+    position: fixed;
     top: 0;
-    bottom: 0;
-    position: sticky;
-    background: linear-gradient(to right, #3d5aff36, #df5eff48);
-    height: 80px;
+    left: 0;
     width: 100%;
-    z-index: 10000;
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    padding: 3rem 9%;
+    background: linear-gradient(to right, #3d5aff36, #df5eff48);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom-left-radius: 125px;
+    z-index: 100;
 }
 
-label.logo {
+.logo1 {
+    font-size: 3rem;
     color: #ff3bf5;
-    text-shadow: 2px 2px 0px #ff6ff8, 
-                         4px 4px 0px #bb0db2, 
-                         6px 6px 0px #a7059e;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-.logo:hover {
-    color: #ff3bf500;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: none;
-    border-radius: 20px;
-}
-.a:hover {
-    background: #ff3bf5;
-    transition: .5s;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    font-weight: 800;
     cursor: pointer;
-    display: none;
+    transition: 0.5s ease;
 }
 
-#check {
-    display: none;
+.logo1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff3bf5;
 }
 
-.Sign {
-    float: right;
-    margin-left: 340px;
-    margin-right: 0;
+.navbar a {
+    font-size: 1.8rem;
     color: #ff3bf5;
-    text-shadow: 2px 2px 0px #ff6ff8, 
-                         4px 4px 0px #bb0db2, 
-                         6px 6px 0px #a7059e;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
 
-.Sign:hover {
-    color: #ff3bf500;
+.navbar a:hover,
+.navbar a.active {
+    padding: 1rem;
+    color: #ff3bf5;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid #ff3bf5;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: #ff3bf5;
+    display: none;
 }
 
 
@@ -130,7 +98,7 @@ nav ul li a {
 
 /* ==== container ==== */
 .container {
-    margin: auto;
+    margin: 200px auto;
     height: 200vh;
     width: 1138px;
     background: linear-gradient(to right, #3d5aff36, #df5eff48);
@@ -154,7 +122,6 @@ nav ul li a {
     margin-top: 50px;
     margin-bottom: -100px;
 }
-
 
 .chapter {
     margin-top: 170px;
@@ -399,8 +366,7 @@ hr {
 /* ==== iphone 14 ==== */
 @media (max-width: 440px) {
     body {
-        background-image: url(/image/pic2.jpg);
-        height: 100vh;
+        background-image: url(/image/picCute.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: 100%;
@@ -453,7 +419,7 @@ hr {
 
     .container {
         margin: auto;
-        height: 250vh;
+        height: 300vh;
         width: 360px;
         background-color: #ffffff49;
         border-radius: 40px;
@@ -544,11 +510,45 @@ hr {
 }
 
 
+@media (max-width:995px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar a:hover,
+    .navbar a:active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem;
+    }
+}
+
+
 
 /* ==== iphone X ==== */
 @media (max-width: 390px) {
     body {
-        background-image: url(/image/pic2.jpg);
+        background-image: url(/image/picCute.jpg);
         height: 100vh;
         background-attachment: fixed;
         background-position: center;
@@ -556,7 +556,7 @@ hr {
     }
     .container {
         margin: auto;
-        height: 250vh;
+        height: 300vh;
         width: 330px;
         background-color: #ffffff49;
         border-radius: 40px;
