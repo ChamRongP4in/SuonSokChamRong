@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame 1</title>
+    <style>
+        table {
+          border: 3px solid black; /* Thicker border around the table */
+          width: 50%; /* Optional: Adjust width of the table */
+          margin: 20px auto; /* Centers the table on the page */
+      }
+      tr, th, td {
+          border: 1px solid black; /* Border around each cell */
+          padding: 8px;
+          text-align: center;
+      }
+      th {
+          background-color: #f2f2f2; /* Optional: Light background for headers */
+      }
+    </style>
+</head>
+<body>
+    <h1>Frame 2</h1>
+    <table style="border: solid black 2px;">
+        <tr>
+            <td colspan="2" rowspan="2">A</td>
+            <td colspan="2" rowspan="2">B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="5">E</td>
+        </tr>
+    </table>
+</body>
+</html>
